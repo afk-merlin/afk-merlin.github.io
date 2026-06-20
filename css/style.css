@@ -83,56 +83,56 @@
     color-scheme: dark;
 }
 
-/* ===== LIGHT THEME — Aged One Piece map / parchment (warm, vintage) ===== */
+/* ===== LIGHT THEME — Law "Operating Room": clean white + cyan ROOM + Heart yellow ===== */
 [data-theme="light"] {
-    --bg-ocean: #cdd9e5;
-    --bg-deep: #b3c4d4;
-    --bg-card: rgba(225, 234, 243, 0.94);
-    --bg-card-hover: rgba(235, 242, 249, 0.98);
+    --bg-ocean: #eef6fa;
+    --bg-deep: #ddecf3;
+    --bg-card: rgba(255, 255, 255, 0.92);
+    --bg-card-hover: rgba(255, 255, 255, 0.99);
 
-    --text-primary: #0f2231;
-    --text-secondary: #2c4456;
-    --text-muted: #5b7488;
+    --text-primary: #0e2233;
+    --text-secondary: #2f4a5c;
+    --text-muted: #5d7689;
 
-    --gold: #0891b2;
-    --gold-light: #22d3ee;
+    --gold: #0e7490;
+    --gold-light: #06b6d4;
     --gold-dark: #155e75;
-    --crimson: #b45309;
-    --crimson-light: #ca8a04;
-    --crimson-dark: #92400e;
+    --crimson: #d97706;
+    --crimson-light: #f59e0b;
+    --crimson-dark: #b45309;
 
-    --ocean-blue: #0e7490;
-    --ocean-light: #22d3ee;
+    --ocean-blue: #0891b2;
+    --ocean-light: #06b6d4;
     --ocean-deep: #155e75;
     --sky-blue: #38bdf8;
 
-    --border-color: rgba(40, 70, 95, 0.30);
-    --border-hover: rgba(40, 70, 95, 0.55);
-    --glow-gold: rgba(8, 145, 178, 0.18);
-    --glow-red: rgba(180, 83, 9, 0.12);
+    --border-color: rgba(8, 145, 178, 0.28);
+    --border-hover: rgba(8, 145, 178, 0.6);
+    --glow-gold: rgba(6, 182, 212, 0.28);
+    --glow-red: rgba(245, 158, 11, 0.18);
 
-    --code-bg: #0f2231;
-    --card-gradient-from: rgba(228, 236, 244, 0.95);
-    --card-gradient-to: rgba(206, 220, 233, 0.92);
-    --card-hover-from: rgba(250, 243, 222, 0.98);
-    --card-hover-to: rgba(214, 226, 238, 0.95);
-    --nav-bg: rgba(216, 227, 238, 0.96);
-    --section-bg-a: rgba(198, 214, 230, 0.42);
-    --section-bg-b: rgba(180, 200, 219, 0.32);
-    --section-bg-c: rgba(216, 227, 238, 0.36);
-    --footer-bg: rgba(202, 216, 230, 0.93);
-    --night-ocean: linear-gradient(180deg, #dbe6ef 0%, #c7d6e4 45%, #b3c4d4 100%);
-    --wave1-from: rgba(14, 116, 144, 0.16);
+    --code-bg: #0e2233;
+    --card-gradient-from: rgba(255, 255, 255, 0.96);
+    --card-gradient-to: rgba(230, 246, 251, 0.9);
+    --card-hover-from: rgba(255, 255, 255, 0.99);
+    --card-hover-to: rgba(220, 243, 250, 0.96);
+    --nav-bg: rgba(246, 252, 254, 0.93);
+    --section-bg-a: rgba(6, 182, 212, 0.10);
+    --section-bg-b: rgba(245, 200, 35, 0.11);
+    --section-bg-c: rgba(255, 255, 255, 0.55);
+    --footer-bg: rgba(238, 246, 250, 0.94);
+    --night-ocean: linear-gradient(180deg, #f5fbfd 0%, #e6f4f9 42%, #d4ecf4 100%);
+    --wave1-from: rgba(8, 145, 178, 0.18);
     --wave1-to: rgba(21, 94, 117, 0.08);
-    --wave2-from: rgba(8, 145, 178, 0.11);
-    --wave2-to: rgba(14, 116, 144, 0.06);
-    --wave3-from: rgba(180, 83, 9, 0.08);
-    --wave3-to: rgba(40, 70, 95, 0.08);
+    --wave2-from: rgba(6, 182, 212, 0.13);
+    --wave2-to: rgba(8, 145, 178, 0.06);
+    --wave3-from: rgba(245, 200, 35, 0.16);
+    --wave3-to: rgba(56, 189, 248, 0.10);
     --watermark-opacity: 0.05;
 
     --accent-gradient: linear-gradient(135deg, var(--crimson), var(--gold));
     --treasure-gradient: linear-gradient(135deg, var(--gold-dark), var(--gold), var(--gold-light));
-    --fire-gradient: linear-gradient(135deg, var(--crimson-dark), var(--crimson), #ca8a04);
+    --fire-gradient: linear-gradient(135deg, var(--crimson-dark), var(--crimson), #f59e0b);
     --ocean-gradient: linear-gradient(135deg, var(--ocean-deep), var(--ocean-light));
 
     color-scheme: light;
@@ -891,7 +891,7 @@ body.loaded { overflow: visible; }
    ⚔️  ZORO finishing — jade buttons + Three-Sword skill accents
    =================================================================== */
 :root { --accent-gradient: linear-gradient(135deg, #155e75, #22d3ee); }
-[data-theme="light"] { --accent-gradient: linear-gradient(135deg, #155e75, #0e7490); }
+[data-theme="light"] { --accent-gradient: linear-gradient(135deg, #0e7490, #06b6d4); }
 
 .skill-category.sword-wado { box-shadow: inset 4px 0 0 #e2e8f0; }
 .skill-category.sword-kitetsu { box-shadow: inset 4px 0 0 #eab308; }
