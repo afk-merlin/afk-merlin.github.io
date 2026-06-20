@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trafalgar D. Merlin — Drone &amp; IoT Engineer | Worst Generation</title>
+    <meta name="description" content="Trafalgar D. Merlin (AFK Merlin) — drone, multirotor &amp; IoT engineer. FPV quadcopters, embedded firmware, tactical gadgets. A Worst Generation pirate sailing for free skies.">
+    <meta name="author" content="Trafalgar D. Merlin">
+    <meta name="theme-color" content="#0a0e16">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://afk-merlin.github.io/">
+    <meta property="og:title" content="Trafalgar D. Merlin — Drone &amp; IoT Engineer">
+    <meta property="og:description" content="ROOM. FPV quadcopters, multirotor builds, embedded firmware &amp; tactical IoT. Worst Generation. ☠️">
+    <meta property="og:image" content="https://afk-merlin.github.io/images/og-merlin.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:secure_url" content="https://afk-merlin.github.io/images/og-merlin.jpg">
+    <meta property="og:image:alt" content="WANTED — Trafalgar D. Merlin — Drone &amp; IoT Engineer">
+    <link rel="image_src" href="https://afk-merlin.github.io/images/og-merlin.jpg">
+    <link rel="canonical" href="https://afk-merlin.github.io/">
+    <meta name="robots" content="index,follow">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Trafalgar D. Merlin — Drone &amp; IoT Engineer">
+    <meta name="twitter:description" content="ROOM. FPV quadcopters, multirotor &amp; tactical IoT. Worst Generation. ☠️">
+    <meta name="twitter:image" content="https://afk-merlin.github.io/images/og-merlin.jpg">
+    <meta name="twitter:image:alt" content="WANTED — Trafalgar D. Merlin">
+    <meta property="og:site_name" content="Trafalgar D. Merlin">
+    <meta property="og:locale" content="en_US">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/jolly-roger-cyber-nobg.png">
+    <link rel="apple-touch-icon" href="images/jolly-roger-cyber-nobg.png">
+    <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('pirate-theme')||'dark')</script>
+</head>
+<body>
+    <!-- Preloader — Engage ROOM -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo-wrap">
+                <img src="images/jolly-roger-cyber-nobg.png" alt="" class="preloader-logo">
+                <div class="preloader-ring"></div>
+            </div>
+            <div class="preloader-title">BACKBENCHERS PIRATES</div>
+            <div class="preloader-bar"><span id="preloaderBar"></span></div>
+            <div class="preloader-text" id="preloaderText">Engaging ROOM...</div>
+        </div>
+    </div>
+
+    <!-- Cinematic overlays -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+    <div class="vignette-overlay" aria-hidden="true"></div>
+
+    <!-- Sea / sky background -->
+    <div class="ocean-bg">
+        <div class="wave wave-1"></div>
+        <div class="wave wave-2"></div>
+        <div class="wave wave-3"></div>
+    </div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/jolly-roger-cyber-nobg.png" alt="Backbenchers Jolly Roger" class="nav-logo-img">
+                <span class="logo-text">Backbenchers Pirates</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">Dossier</a>
+                <a href="#experience" class="nav-link">Operations</a>
+                <a href="#skills" class="nav-link">Loadout</a>
+                <a href="#blog" class="nav-link">Dispatches</a>
+                <a href="#contact" class="nav-link">Hail</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text-side">
+                <div class="hero-badge animate-fade-up">
+                    <span class="badge-dot"></span>
+                    「ROOM」— everything in range is mine to operate
+                </div>
+                <h1 class="hero-title animate-fade-up delay-1">
+                    I'm <span class="pirate-text">Trafalgar D. Merlin</span>
+                    <span class="hero-alias">a.k.a. AFK Merlin — the Surgeon of Drones ☠️</span>
+                </h1>
+                <div class="hero-bounty animate-fade-up delay-2">
+                    <div class="bounty-poster-frame" id="bountyPoster">
+                        <img src="images/merlin-bounty-poster.png" alt="WANTED — Trafalgar D. Merlin" class="bounty-poster-img">
+                        <div class="bounty-shine"></div>
+                    </div>
+                </div>
+                <div class="hero-typewriter animate-fade-up delay-3">
+                    <span class="typewriter-prefix">Room: </span>
+                    <span class="typewriter-text" id="typewriter"></span>
+                    <span class="typewriter-cursor">▌</span>
+                </div>
+                <p class="hero-description animate-fade-up delay-4">
+                    I don't make noise — I make precise cuts. Drone &amp; IoT engineer: FPV quadcopters,
+                    multi-rotor airframes, embedded firmware and tactical gadgets. Calm hands, sharp scalpel.
+                    A <strong>Worst Generation</strong> pirate sailing for free skies — wanted by a World Government
+                    that fears them. ☠️
+                </p>
+                <div class="hero-cta animate-fade-up delay-5">
+                    <a href="#experience" class="btn btn-primary">
+                        <span>📡 Operations Log</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>☠️ Hail the Sub</span>
+                    </a>
+                </div>
+                <div class="hero-stats animate-fade-up delay-5">
+                    <div class="stat">
+                        <span class="stat-number" data-count="40">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Airframes Built</span>
+                    </div>
+                    <div class="stat-divider">☠️</div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="1200">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Flight Hours</span>
+                    </div>
+                    <div class="stat-divider">☠️</div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="9">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Systems Mastered</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-side animate-fade-up delay-2">
+                <div class="hero-image-frame">
+                    <img src="images/profile-merlin.jpg" alt="Trafalgar D. Merlin — Drone &amp; IoT Engineer" class="hero-image">
+                    <div class="hero-image-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-compass">☠️</div>
+            <span>Scan Deeper</span>
+        </div>
+    </section>
+
+    <!-- Dossier / About -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">〜 The Surgeon's Dossier 〜</span>
+                <h2 class="section-title">Operating <span class="pirate-text">Theatre</span></h2>
+                <p class="section-subtitle">Calm hands. Cold logic. Sharper than a scalpel.</p>
+            </div>
+            <p class="about-intro">
+                I'm <strong>Trafalgar D. Merlin</strong> — a drone, multirotor &amp; IoT engineer who treats every
+                build like surgery. FPV quadcopters, embedded firmware, sensors, RF links and tactical gadgets:
+                I open them up, fix what's broken, and put them back together better. I sail with the
+                <strong>Worst Generation</strong> — for open skies and against any World Government that hoards
+                control. Precision over noise. Always.
+            </p>
+            <div class="about-grid">
+                <div class="about-card treasure-card">
+                    <div class="about-icon">🩺</div>
+                    <h3>The Operating Table</h3>
+                    <p>Every airframe, board and payload that lands on my table leaves sharper. I diagnose fast, cut precisely, and never ship a system I wouldn't fly myself.</p>
+                </div>
+                <div class="about-card treasure-card">
+                    <div class="about-icon">🌀</div>
+                    <h3>Ope Ope no Mi</h3>
+                    <p>My "Room" is the airspace and the network. Inside it I can swap payloads, re-route comms, and operate on hardware in flight. Automation is just surgery at scale.</p>
+                </div>
+                <div class="about-card treasure-card">
+                    <div class="about-icon">🕊️</div>
+                    <h3>Free Skies</h3>
+                    <p>I build for the people who look up. Eyes in the sky shouldn't belong only to the powerful — a Worst Generation believes the horizon belongs to everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operations / Experience -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">〜 Operations Log 〜</span>
+                <h2 class="section-title">Sorties &amp; <span class="pirate-text">Builds</span></h2>
+                <p class="section-subtitle">Every operation, logged and dissected. ☠️</p>
+            </div>
+            <!-- EDIT: replace with Merlin's real builds/operations -->
+            <div class="timeline">
+                <div class="timeline-item treasure-card">
+                    <span class="timeline-dot">☠️</span>
+                    <div class="timeline-head">
+                        <h3 class="timeline-role">FPV / Multirotor — Airframe Surgeon</h3>
+                        <span class="timeline-date">Present</span>
+                    </div>
+                    <p>Designing, tuning and repairing FPV quadcopters and multi-rotor platforms — frame builds, ESC/FC stacks, Betaflight/iNav tuning, and field-grade repairs that survive real conditions.</p>
+                    <div class="timeline-tags"><span class="tag">FPV</span><span class="tag">Betaflight</span><span class="tag">Multirotor</span></div>
+                </div>
+                <div class="timeline-item treasure-card">
+                    <span class="timeline-dot">📡</span>
+                    <div class="timeline-head">
+                        <h3 class="timeline-role">IoT &amp; Gadgets — Systems Operator</h3>
+                        <span class="timeline-date">Ongoing</span>
+                    </div>
+                    <p>Embedded devices and tactical gadgets: ESP32 / Raspberry Pi / Arduino nodes, sensor arrays, RF &amp; LoRa links, and custom accessories wired into clean, reliable systems.</p>
+                    <div class="timeline-tags"><span class="tag">ESP32</span><span class="tag">Raspberry Pi</span><span class="tag">LoRa</span><span class="tag">Sensors</span></div>
+                </div>
+                <div class="timeline-item treasure-card">
+                    <span class="timeline-dot">🛰️</span>
+                    <div class="timeline-head">
+                        <h3 class="timeline-role">Telemetry &amp; Recon — Eyes in the Sky</h3>
+                        <span class="timeline-date">Field</span>
+                    </div>
+                    <p>Long-range telemetry, GPS &amp; video links, mapping and recon payloads — turning raw airframes into reliable eyes-in-the-sky for tough, remote terrain.</p>
+                    <div class="timeline-tags"><span class="tag">MAVLink</span><span class="tag">GPS</span><span class="tag">Video Link</span><span class="tag">Mapping</span></div>
+                </div>
+            </div>
+
+            <div class="sidequest-header"><span class="section-tag">〜 From the Workbench 〜</span></div>
+            <div class="about-grid sidequests">
+                <div class="about-card treasure-card">
+                    <div class="about-icon">🔧</div>
+                    <h3>Field Repair</h3>
+                    <p>Soldering, PCB rework and improvised fixes — keeping birds flying where there's no spare-parts shop for a hundred miles.</p>
+                </div>
+                <div class="about-card treasure-card">
+                    <div class="about-icon">🧠</div>
+                    <h3>Embedded Brains</h3>
+                    <p>Firmware in C/C++ &amp; Python, flight controllers, microcontrollers and the glue code that makes hardware behave under pressure.</p>
+                </div>
+                <div class="about-card treasure-card">
+                    <div class="about-icon">🗺️</div>
+                    <h3>Recon &amp; Mapping</h3>
+                    <p>Aerial survey, terrain mapping and tactical scouting — data that helps people move smarter and safer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loadout / Skills -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">〜 The Loadout 〜</span>
+                <h2 class="section-title">Operating <span class="pirate-text">Kit</span></h2>
+                <p class="section-subtitle">Inside the Room, every tool answers to me.</p>
+            </div>
+            <div class="skills-categories">
+                <div class="skill-category treasure-card sword-enma">
+                    <h3 class="category-title"><span class="category-icon">🌀</span> ROOM — Drones &amp; Multirotor</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FPV</span><span class="skill-tag">Quadcopter</span><span class="skill-tag">Multi-rotor</span>
+                        <span class="skill-tag">Betaflight</span><span class="skill-tag">iNav</span><span class="skill-tag">Flight Controllers</span>
+                    </div>
+                </div>
+                <div class="skill-category treasure-card sword-wado">
+                    <h3 class="category-title"><span class="category-icon">📡</span> Shambles — IoT &amp; Gadgets</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ESP32</span><span class="skill-tag">Raspberry Pi</span><span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">Sensors</span><span class="skill-tag">RF / LoRa</span>
+                    </div>
+                </div>
+                <div class="skill-category treasure-card sword-shusui">
+                    <h3 class="category-title"><span class="category-icon">🛰️</span> Scan — Telemetry &amp; Comms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MAVLink</span><span class="skill-tag">GPS</span><span class="skill-tag">Telemetry</span>
+                        <span class="skill-tag">Video Link</span><span class="skill-tag">Antennas</span>
+                    </div>
+                </div>
+                <div class="skill-category treasure-card sword-kitetsu">
+                    <h3 class="category-title"><span class="category-icon">🧠</span> Scalpel — Embedded &amp; Firmware</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C / C++</span><span class="skill-tag">Python</span><span class="skill-tag">Embedded Linux</span>
+                        <span class="skill-tag">PCB / Soldering</span>
+                    </div>
+                </div>
+                <div class="skill-category treasure-card sword-haki">
+                    <h3 class="category-title"><span class="category-icon">🧭</span> Tact — Field &amp; Recon</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Field Repair</span><span class="skill-tag">Recon</span><span class="skill-tag">Mapping</span>
+                        <span class="skill-tag">Tactical Ops</span><span class="skill-tag">Survival Tech</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dispatches / Blog -->
+    <section class="section blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">〜 Dispatches 〜</span>
+                <h2 class="section-title">Field <span class="pirate-text">Notes</span></h2>
+                <p class="section-subtitle">Logs from the workbench and the sky.</p>
+            </div>
+            <!-- EDIT: replace placeholder dispatches with real posts -->
+            <div class="blog-grid">
+                <div class="blog-card treasure-card coming-soon">
+                    <div class="blog-card-image"><div class="blog-card-image-placeholder"><span>🛸</span></div></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta"><span class="blog-date">☠️ Coming Soon</span></div>
+                        <h3 class="blog-card-title">Building a Long-Range FPV Rig from Scrap</h3>
+                        <p class="blog-card-excerpt">Frame, stack, antennas and tuning — a field-ready bird on a pirate's budget.</p>
+                        <div class="blog-card-tags"><span class="tag">FPV</span><span class="tag">Build</span></div>
+                    </div>
+                </div>
+                <div class="blog-card treasure-card coming-soon">
+                    <div class="blog-card-image"><div class="blog-card-image-placeholder"><span>📡</span></div></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta"><span class="blog-date">☠️ Coming Soon</span></div>
+                        <h3 class="blog-card-title">LoRa Mesh for Off-Grid Comms</h3>
+                        <p class="blog-card-excerpt">Cheap nodes, long range, no infrastructure — staying connected where the grid ends.</p>
+                        <div class="blog-card-tags"><span class="tag">IoT</span><span class="tag">LoRa</span></div>
+                    </div>
+                </div>
+                <div class="blog-card treasure-card coming-soon">
+                    <div class="blog-card-image"><div class="blog-card-image-placeholder"><span>🧠</span></div></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta"><span class="blog-date">☠️ Coming Soon</span></div>
+                        <h3 class="blog-card-title">Flight-Controller Firmware, Demystified</h3>
+                        <p class="blog-card-excerpt">What actually happens between your sticks and the motors — and how to tune it.</p>
+                        <div class="blog-card-tags"><span class="tag">Firmware</span><span class="tag">Embedded</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hail / Contact -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">〜 Hail the Sub 〜</span>
+                <h2 class="section-title">Send a <span class="pirate-text">Vivre Card</span></h2>
+                <p class="section-subtitle">Got a build, a mission, or a problem worth operating on? ☠️</p>
+            </div>
+            <!-- EDIT: your real links below -->
+            <div class="contact-grid">
+                <div class="contact-card treasure-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/afk-merlin" target="_blank" rel="noopener" class="contact-link">@afk-merlin</a>
+                </div>
+                <div class="contact-card treasure-card">
+                    <div class="contact-icon">📡</div>
+                    <h3>Den Den Mushi</h3>
+                    <a href="mailto:you@example.com" class="contact-link">you@example.com</a>
+                </div>
+                <div class="contact-card treasure-card">
+                    <div class="contact-icon">🧭</div>
+                    <h3>Last Position</h3>
+                    <span class="contact-link">Somewhere in the New World 🌊</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating ship + crests -->
+    <div class="floating-ship">
+        <img src="images/thousand-sunny.png" alt="Ship" class="ship-img">
+    </div>
+    <div class="jolly-flag jolly-flag-left">
+        <img src="images/jolly-roger-cyber-nobg.png" alt="Jolly Roger" class="flag-img">
+    </div>
+    <div class="jolly-flag jolly-flag-right">
+        <img src="images/jolly-roger-cyber-nobg.png" alt="Jolly Roger" class="flag-img">
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo"><img src="images/jolly-roger-cyber-nobg.png" alt="" class="footer-logo-img"> <span class="logo-text">Backbenchers Pirates</span></div>
+                <p class="footer-text">Operated with ☠️ &amp; cold precision by Trafalgar D. Merlin © 2026</p>
+                <div class="footer-links"><a href="https://github.com/afk-merlin" target="_blank" rel="noopener">GitHub</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
